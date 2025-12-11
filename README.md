@@ -1,8 +1,8 @@
 # EmeraldData.jl
 
 <!-- Links and shortcuts -->
-[gm-url]: https://github.com/silicormosia/EmeraldData.jl
-[gm-api]: https://silicormosia.github.io/EmeraldData.jl/stable/API/
+[ed-url]: https://github.com/silicormosia/EmeraldData.jl
+[ed-api]: https://silicormosia.github.io/EmeraldData.jl/stable/API/
 
 [dev-img]: https://img.shields.io/badge/docs-dev-blue.svg
 [dev-url]: https://silicormosia.github.io/EmeraldData.jl/dev/
@@ -24,18 +24,11 @@ Please cite our paper(s) when you use EmeraldData:
 
 
 ## About
-[`EmeraldData.jl`][gm-url] includes a collection of global canopy propertie. To best utilize `Pkg.Artifacts` and FTP storage, [`EmeraldData.jl`][gm-url] only supports julia 1.7 and above.
+[`EmeraldData.jl`][ed-url] includes a collection of global canopy propertie. To best utilize `Pkg.Artifacts` and FTP storage, [`EmeraldData.jl`][ed-url] only supports julia 1.7 and above.
 
 | Documentation           | CI Status             | Compatibility           | Code Coverage           |
 |:------------------------|:----------------------|:------------------------|:------------------------|
 | [![][dev-img]][dev-url] | [![][st-img]][st-url] | [![][min-img]][min-url] | [![][cov-img]][cov-url] |
-
-
-## Installation
-```julia
-julia> using Pkg;
-julia> Pkg.add("EmeraldData");
-```
 
 
 ## API
@@ -49,20 +42,7 @@ EmeraldData has the following sub-modules, some of which are in development. The
 | Partitioner | Sort the ungridded datasets     | Testing      |
 | Requestor   | Request gridded datasets        | v0.2         |
 
-See [`API`][gm-api] for more detailed information about how to use [`EmeraldData.jl`][gm-url].
-
-To automatically download and query the file path of the dataset, use
-```julia
-julia> using EmeraldData.Collector;
-julia> file_path = Collector.download_artifact!("VCMAX_2X_1Y_V1");
-```
-
-To request a partial dataset from the server without download the entire dataset, use
-```julia
-julia> using EmeraldData.Requestor;
-julia> dat,std = Requestor.request_site_data("VCMAX_2X_1Y_V1", 35.1, 115.2);
-julia> dat,std = Requestor.request_site_data("VCMAX_2X_1Y_V1", 35.1, 115.2; interpolation=true);
-```
+See [`API`][ed-api] for more detailed information about how to use [`EmeraldData.jl`][ed-url].
 
 
 ## Data contribution

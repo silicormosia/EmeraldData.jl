@@ -1,3 +1,6 @@
 [deps]
 Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
-EmeraldData = "8231cf5e-2e2a-4221-b520-6690d15c76c2"
+EmeraldData = "2bb7d46c-a1fe-4c81-b098-5748a6633b16"
+
+[sources]
+EmeraldData = {path = ".."}
