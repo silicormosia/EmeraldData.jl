@@ -14,8 +14,11 @@ docs/src/paper*
 *.nc*
 *.json
 *.csv
-*.Identifier
 
 test/demo_*.jl
 test/testcase_creation*
 test/test_*.jl
+
+testcase_creation*
+
+!/data/*

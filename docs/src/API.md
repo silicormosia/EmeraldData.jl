@@ -6,8 +6,8 @@ CurrentModule = EmeraldData
 
 ## Collector
 ```@docs
-Collector.download_artifact!
 Collector.clean_database!
+Collector.download_dataset!
 Collector.sync_database!
 ```
 

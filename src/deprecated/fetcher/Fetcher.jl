@@ -1,20 +1,11 @@
 module Fetcher
 
-using Dates: isleapyear
-using DocStringExtensions: TYPEDEF, TYPEDFIELDS
-using ProgressMeter: @showprogress
-
-export GeneralWgetData
-export fetch_data!
+using PkgUtility.TimeParser: MDAYS, MDAYS_LEAP, which_month
 
 
 # EarthData related information
 EARTH_DATA_ID  = "";
 EARTH_DATA_PWD = "";
-
-
-# the functions below are borrowed from Yujie's Emerald repo to avoid inter-dependency
-include("borrowed/EmeraldUtility.jl")
 
 
 # include the function files
